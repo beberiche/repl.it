@@ -1,0 +1,95 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+body {
+  background-color: #dde1d4;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 650px;
+  width: 100%;
+
+  height: 100vh;
+  margin: 0 auto;
+  
+}
+
+header {
+  height: 150px;
+}
+header > section {
+  background-color: black;
+  height: 125px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 2fr 3fr 3fr;
+  color: white;
+  padding: 0 0 10px 15px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.headerText {
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text
+}
+
+
+
+main {
+  height: 400px;
+}
+
+main > section {
+  height: 385px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 5fr 3fr;
+}
+main > section > div {
+  padding: 15px 15px 0 15px;
+  background-color: orangered;
+}
+
+.mainText {
+    font-weight: 800;
+  font-size: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+
+footer > section {
+  height: 300px;
+ display: grid;
+ column-gap: 15px;
+ grid-template-columns: 5fr 3fr;
+}
+
+.footerText :nth-child(1) {
+  background-color: orangered;
+  padding: 0 15px 15px 15px;  
+  font-size: 120px;
+    font-weight: 800;
+    text-align: start;
+    color: black;
+}
+
+.footerText :nth-child(2) {
+  background-color: orangered;  
+  padding:  15px;
+    font-size: 15px;
+    color: blanchedalmond;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+text-align: end;
+justify-content: flex-end;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
