@@ -1,0 +1,223 @@
+body,
+header .header_Wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  -ms-grid-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+}
+header {
+  width: 100%;
+  background-color: #f67402;
+  padding: 10px;
+}
+header .header_Wrapper {
+  -ms-grid-columns: 0.1fr 2fr 0.8fr;
+  grid-template-columns: 0.1fr 2fr 0.8fr;
+}
+header .header_Wrapper div {
+  padding: 10px;
+  border: 2px solid #f40502;
+  color: #f40502;
+}
+header .header_Wrapper div:not(.vertical_Text) {
+  border-left: none;
+}
+header .header_Wrapper div:nth-child(2) {
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+}
+header .header_Wrapper .vertical_Text {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+header .header_Wrapper .dob_Division {
+  min-width: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0;
+}
+header .header_Wrapper .dob_Division div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_Wrapper .dob_Division div:first-child {
+  font-size: 0.9em;
+  border: 0;
+}
+header .header_Wrapper .dob_Division div:last-child {
+  font-size: 0.8em;
+  border-right: none;
+  border-bottom: none;
+}
+header .header_Wrapper .dob_Division div:last-child .radius {
+  width: 60%;
+  border: 2px solid #f40502;
+  border-bottom-left-radius: 10% 50%;
+  border-top-left-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  border-top-right-radius: 10% 50%;
+  background-color: #f40502;
+  color: #f67402;
+}
+.header_Wrapper:hover div {
+  color: #f5f5f5;
+  border-color: #f5f5f5;
+  transition: 0.4s linear;
+}
+.header_Wrapper:hover .dob_Division div:last-child .radius {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  transform: scale(1.1);
+}
+main,
+main .red {
+  display: -ms-grid;
+  display: grid;
+}
+main {
+  margin-left: 20px;
+  -ms-grid-columns: 0.1fr 2fr;
+  grid-template-columns: 0.1fr 2fr;
+}
+main .pink_Blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+  width: 50px;
+  position: relative;
+  height: 100%;
+}
+main .pink_Blue .blue,
+main .pink_Blue .pink {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  padding: 10px;
+  background-color: pink;
+  height: 50%;
+}
+main .pink_Blue i {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 1;
+}
+main .pink_Blue .blue {
+  transform: rotate(180deg);
+  background-color: #00f;
+}
+main .red {
+  min-width: 400px;
+  background-color: red;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 60px (125px) [8];
+  grid-template-rows: 60px repeat(8, 125px);
+  width: 100%;
+}
+main .red > :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(7) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(8) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(11) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(12) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(15) {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(16) {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+}
+main .red > :nth-child(17) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+main .red > :nth-child(18) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+}
+main .red h3 {
+  margin: 10px;
+  border-bottom: 2px solid;
+}
+main .red h3 div {
+  font-size: 20px;
+}
+main .red .red_Division {
+  display: flex;
+  justify-content: space-between;
+}
+main .red h4,
+main .red h5 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .red h5 {
+  font-size: 12px;
+  height: 90px;
+  border-bottom: 2px solid;
+}

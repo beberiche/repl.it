@@ -1,0 +1,146 @@
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+header {
+  width: 100%;
+  background-color: #f67402;
+  padding: 10px;
+  .header_Wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 0.8fr;
+    div {
+      padding: 10px;
+      border: 2px solid #f40502;
+      color: #f40502;
+      &:not(.vertical_Text) {
+        border-left: none;
+      }
+      &:nth-child(2) {
+        font-size: 5em;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .vertical_Text {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+
+    .dob_Division {
+      min-width: 200px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding: 0;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child {
+          font-size: 0.9em;
+          border: none;
+        }
+        &:last-child {
+          font-size: 0.8em;
+          border-right: none;
+          border-bottom: none;
+          .radius {
+            width: 60%;
+            border: 2px solid #f40502;
+            border-bottom-left-radius: 10% 50%;
+            border-top-left-radius: 10% 50%;
+            border-bottom-right-radius: 10% 50%;
+            border-top-right-radius: 10% 50%;
+            background-color: #f40502;
+            color: #f67402;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_Wrapper:hover {
+  div {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    transition: 0.4s linear;
+  }
+  .dob_Division div {
+    &:last-child {
+      .radius {
+        background-color: whitesmoke;
+        border-color: whitesmoke;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr;
+  margin-left: 20px;
+  .pink_Blue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    width: 50px;
+    position: relative;
+    height: 100%;
+    .pink {
+      writing-mode: vertical-lr;
+      padding: 10px;
+      background-color: pink;
+      height: 50%;
+    }
+    i {
+      position: absolute;
+      font-size: 50px;
+      top: 50%;
+      margin-top: -25px;
+      z-index: 1;
+    }
+    .blue {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      padding: 10px;
+      background-color: blue;
+      height: 50%;
+    }
+  }
+  .red {
+    min-width: 400px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px repeat(8, 125px);
+    width: 100%;
+    h3 {
+      margin: 10px;
+      border-bottom: 2px solid;
+      div {
+        font-size: 20px;
+      }
+    }
+    .red_Division {
+      display: flex;
+      justify-content: space-between;
+    }
+    h4 {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    h5 {
+      margin-left: 10px;
+      font-size: 12px;
+      height: 90px;
+      border-bottom: 2px solid;
+    }
+  }
+}
