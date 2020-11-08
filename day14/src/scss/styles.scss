@@ -1,0 +1,203 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+section {
+  border: 3px solid #e74c3c;
+  &:not(:first-child) {
+    border-left: none;
+  }
+  height: 100vh;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 3em;
+  padding: 10px;
+}
+
+.namecard {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+
+  .nc_Story {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1em;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  .nc_Index {
+    text-transform: uppercase;
+    font-size: 13px;
+    li {
+      border-top: 2px solid darkgray;
+      border-bottom: 2px solid darkgray;
+      padding: 5px 10px;
+      &:nth-child(even) {
+        border-top-color: #e74c3c;
+      }
+      &:first-child {
+        background-color: lightgray;
+      }
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+  .nc_Info {
+    font-size: 13px;
+    padding: 10px;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    div {
+      &:nth-child(2) {
+        margin-bottom: 2em;
+      }
+      &:nth-child(3) {
+        font-size: 10px;
+        font-weight: 700;
+      }
+      &:nth-child(5) {
+        margin-bottom: 2em;
+      }
+      &:nth-child(6) {
+        font-size: 10px;
+        font-weight: 700;
+      }
+      &:nth-child(8) {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+.article {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  .art_Story {
+    li {
+      padding: 10px;
+      line-height: 1.1em;
+      &:first-child {
+        font-size: 2.5em;
+        color: red;
+        font-weight: 600;
+      }
+      &:not(:first-child) {
+        font-size: 13px;
+      }
+    }
+  }
+  .art_Services_Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightgray;
+    h2 {
+      border-top: 3px solid #e74c3c;
+    }
+    div {
+      padding: 10px;
+      font-size: 1.8em;
+      line-height: 1.2em;
+    }
+  }
+}
+
+.img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  .img_Wrapper {
+    .picture {
+      height: 100%;
+      border-right: 3px solid #e74c3c;
+      border-bottom: 3px solid #e74c3c;
+      background-image: url('https://picsum.photos/200/300/?1');
+      background-size: cover;
+    }
+  }
+
+  .img_Wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    row-gap: 3px;
+    .picture2_Wrapper {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 3px;
+      .picture2 {
+        &:first-child {
+          grid-column: span 3;
+          background-image: url('https://picsum.photos/200/300/?7');
+        }
+        &:last-child {
+          grid-column: span 3;
+          border-right: none;
+          background-image: url('https://picsum.photos/200/300/?8');
+        }
+      }
+    }
+  }
+  .img_Wrapper3 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    .picture3 {
+      background-size: cover;
+      border-top: 3px solid #e74c3c;
+      &:first-child {
+        background-image: url('https://picsum.photos/200/300/?11');
+      }
+      &:nth-child(2) {
+        border-left: 3px solid #e74c3c;
+        background-image: url('https://picsum.photos/200/300/?9');
+      }
+      &:last-child {
+        grid-column: span 4;
+        border-left: 3px solid #e74c3c;
+        background-image: url('https://picsum.photos/200/300/?10');
+      }
+    }
+  }
+}
+
+.picture2 {
+  height: 100%;
+  background-size: cover;
+  &:first-child {
+    grid-column: span 3;
+    border-bottom: 3px solid #e74c3c;
+    background-image: url('https://picsum.photos/200/300/?2');
+  }
+  &:nth-child(2) {
+    grid-column: span 2;
+    border-bottom: 3px solid #e74c3c;
+    border-right: 3px solid #e74c3c;
+    background-image: url('https://picsum.photos/200/300/?3');
+  }
+  &:nth-child(3) {
+    background-image: url('https://picsum.photos/200/300/?4');
+  }
+  &:nth-child(4) {
+    border-bottom: 3px solid #e74c3c;
+    background-image: url('https://picsum.photos/200/300/?5');
+  }
+  &:nth-child(5) {
+    grid-column: span 2;
+    border-left: 3px solid #e74c3c;
+    border-bottom: 3px solid #e74c3c;
+    background-image: url('https://picsum.photos/200/300/?6');
+  }
+}
