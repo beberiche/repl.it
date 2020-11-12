@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Delivery details</h1>
+    <form method="get">
+      <div>
+        <label for="first">First name :</label>
+        <input type="text" name="first" placeholder="First name" required />
+      </div>
+      <div>
+        <label for="last">Last name :</label>
+        <input type="text" name="last" placeholder="Last name" required />
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="address">Address :</label>
+        <input type="text" name="address" placeholder="Address" required />
+      </div>
+      <div>
+        <label for="tel">Phone :</label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          name="tel"
+          placeholder="Phone number"
+          required
+        />
+        <small>ex) 010-xxxx-xxxx</small>
+      </div>
+      <div>
+        <label for="Password">Identification Password : </label>
+        <input
+          type="password"
+          name="Password"
+          placeholder="Password"
+          minlength="10"
+          required
+        />
+      </div>
+      <div>
+        <label for="Shipping">Shipping : </label>
+        <input list="Shippings" name="shipping" required />
+        <datalist id="Shippings">
+          <option value="Express shipping"></option>
+          <option value="Standard shipping"></option>
+          <option value="Free shipping"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="Color">Pakage Color : </label>
+        <input type="color" name="Color" required />
+      </div>
+      <div>
+        <label for="bags">Quantity :</label>
+        <input type="range" name="bags" min="1" max="10" list="num" />
+        <datalist id="num">
+          <option value="1" label="1"></option>
+          <option value="2" label="2"></option>
+          <option value="3" label="3"></option>
+          <option value="4" label="4"></option>
+          <option value="5" label="5"></option>
+          <option value="6" label="6"></option>
+          <option value="7" label="7"></option>
+          <option value="8" label="8"></option>
+          <option value="9" label="9"></option>
+          <option value="10" label="10"></option>
+        </datalist>
+        <small>ex) 1-10</small>
+      </div>
+      <div>
+        <input type="submit" value="Submit Order" required />
+      </div>
+    </form>
+  </body>
+</html>
