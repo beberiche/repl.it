@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.all_wrapper {
+  border: 10px solid teal;
+}
+header,
+main {
+  padding: 0 5vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.top_x {
+  border: none;
+  background-color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.top_title {
+  font-size: 2rem;
+}
+
+main {
+  margin-bottom: 10vh;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin: 5vh 0;
+}
+
+.mid-1_img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  border-radius: 15px;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-1_img > i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.mid-1_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mid-1_wrapper > span:first-child {
+  font-size: 2.5em;
+}
+
+.mid-1_wrapper > span:last-child {
+  font-size: 1.5em;
+  color: gray;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 2fr 75px 75px;
+  column-gap: 5vw;
+  height: 75px;
+}
+
+.section-2 > button {
+  background-color: white;
+  border: 2px solid;
+  box-shadow: 0px 0.3rem;
+  font-size: 2em;
+}
+
+.section-2 > button:first-child {
+  border-radius: 1em;
+}
+
+.mid-2_cir-b {
+  border-radius: 50%;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr 100fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 10vh;
+  column-gap: 2.5vw;
+  margin: 5vh 0;
+}
+
+.mid-3_img {
+  width: 75px;
+  height: 75px;
+  border: 1px solid;
+  background-color: thistle;
+  border-radius: 0.5em;
+}
+
+.mid-3_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mid-3_wrapper > span:first-child {
+  font-size: 1.5em;
+}
+
+.mid-3_wrapper > span:last-child {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 10px;
+  }
+
+  .section-2 {
+    display: grid;
+    grid-template-columns: 2fr 50px 50px;
+    column-gap: 5vw;
+    height: 50px;
+  }
+
+  .mid-1_img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .mid-1_img > i {
+    font-size: 30px;
+  }
+
+  .section-3 {
+    row-gap: 5vh;
+  }
+
+  .mid-3_img {
+    width: 25px;
+    height: 25px;
+  }
+}
