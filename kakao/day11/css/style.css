@@ -1,0 +1,40 @@
+@import '/css/reset.css';
+@import '/css/variables.css';
+@import '/css/header.css';
+@import '/css/main.css';
+body {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 0.5em;
+  }
+  header {
+    height: 12.5vh;
+  }
+  .search-bar_layout {
+    height: 5vh;
+  }
+  .search-bar {
+    height: 5vh;
+  }
+  main {
+    margin: 5vh auto;
+  }
+
+  .botd_button_layout > button {
+    width: 20vw;
+  }
+  .botd_bookmark_layout > button {
+    width: 30vw;
+  }
+
+  .ta_layout:last-child {
+    display: none;
+  }
+}
